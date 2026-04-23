@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode"></script>
+    <title>QR code with Logo</title>
+
+    <!-- QR Code with logo -->
+</head>
+<body>
+    <h2>🚚 Parcel System</h2>
+
+<!-- ADD -->
+<div class="box">
+  <h3>Add Parcel</h3>
+
+  <input id="id" placeholder="Parcel ID">
+  <input id="name" placeholder="Name">
+  <input id="address" placeholder="Address">
+
+  <button onclick="saveParcel()">Save & Generate QR</button>
+
+  <canvas id="qr"></canvas>
+</div>
+
+<!-- SCAN -->
+<div class="box">
+  <h3>Scan Parcel</h3>
+  <div id="reader"></div>
+
+  <h3 id="result">Result:</h3>
+  <script src="app.js"></script>
+</div>
+</body>
+</html>
